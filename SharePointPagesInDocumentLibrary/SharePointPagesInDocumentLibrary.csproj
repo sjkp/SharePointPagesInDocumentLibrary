@@ -51,6 +51,7 @@
     <Content Include="app\sharepoint.js" />
     <Content Include="Properties\build\lib\Ionic.Zip.DLL" />
     <Content Include="Properties\build\lib\MSBuild.ExtensionPack.dll" />
+    <Content Include="screenshots\icon128.png" />
     <Content Include="screenshots\screenshot.png" />
     <Content Include="index.htm" />
     <Content Include="DebugSettings.template.xml" />
