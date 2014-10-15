@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "SharePoint count pages in document library",
+    "description": "This extension counts the number of pages in all documents found in the current document library.",
+    "version": "1.0",
+    "permissions": [
+        "https://euc-word-view.officeapps.live.com/*",
+        "https://*.googleapis.com/*",
+        "http://*.googleapis.com/*",
+        "https://*.sharepoint.com/*",
+        "activeTab",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_icon": "img/icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["event.js"],
+        "persistent": false
+    }
+
+    /*"content_scripts": [
+        {
+            "matches": [ "https://*.sharepoint.com/*" ],
+            "js": [ "inject.js" ]
+        }
+    ]*/,
+    "web_accessible_resources": ["script.js"] 
+}

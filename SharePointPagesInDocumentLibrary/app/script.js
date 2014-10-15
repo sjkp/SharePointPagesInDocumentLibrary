@@ -1,0 +1,1 @@
+﻿console.log(_spPageContextInfo.webAbsoluteUrl);

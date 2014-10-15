@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="jquery-2.0.3.min.js"></script>  
+    <script src="popup.js"></script>
+    <style>
+        input[type=url],
+        input[type=text] {
+            width: 300px;
+        }
+    </style>
+  </head>
+  <body>
+      
+      <label for="listTitle">List Title:</label><input id="listTitle" type="text" placeholder="List title"  /><br/>
+      <label for="webUrl">Web Url:</label><input id="webUrl" type="url" placeholder="Web Url" /><br/>
+      <label for="owaUrl">OWA Url:</label><input id="owaUrl" type="url" placeholder="OWA Url" value="https://euc-word-view.officeapps.live.com" /><br/>
+      <input type="button" id="btn" value="Count Pages" />
+      <span id="progress"></span>
+      <table id="pages">
+      </table>
+  </body>
+</html>
+
